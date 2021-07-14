@@ -7,6 +7,7 @@ date_default_timezone_set('Etc/UTC');
 
 try {
     require './phpmailer/PHPMailerAutoload.php';
+    require './ReCaptcha/autoload.php';
 
     $recipients = $formConfig['recipientEmail'];
 
@@ -64,7 +65,7 @@ try {
             $template);
     }
 
-    //validate recaptcha
+    //validate recaptcha v3
     $captcha = filter_input(INPUT_POST, 'g-recaptcha-response', FILTER_SANITIZE_STRING);
     if(!$captcha){
         die('MF256');
@@ -87,11 +88,11 @@ try {
     $response = file_get_contents($url, false, $context);
     $responseKeys = json_decode($response,true);
     // header('Content-type: application/json');
-    print_r($responseKeys);
+    // print_r($responseKeys);
     if(!$responseKeys["success"]) {
         die('MF256');
     } 
-    //end validate recaptcha
+    //end validate recaptcha v3
 
     preg_match("/(<!-- #\{BeginInfo\} -->)(.|\s)*?(<!-- #\{EndInfo\} -->)/", $template, $tmp, PREG_OFFSET_CAPTURE);
     foreach ($_POST as $key => $value) {
