@@ -25,10 +25,9 @@ try {
         }
         return $_SERVER['REMOTE_ADDR'];
     }
-
-    if (preg_match('/^(127\.|192\.168\.)/', getRemoteIPAddress())) {
-        die('MF002');
-    }
+    // if (preg_match('/^(127\.|192\.168\.)/', getRemoteIPAddress())) {
+    //     die('MF002');
+    // }
 
     $template = file_get_contents('rd-mailform.tpl');
 
@@ -64,6 +63,35 @@ try {
             array("Message:", $_POST['message']),
             $template);
     }
+
+    //validate recaptcha
+    $captcha = filter_input(INPUT_POST, 'g-recaptcha-response', FILTER_SANITIZE_STRING);
+    if(!$captcha){
+        die('MF256');
+    }
+    $secretKey = $formConfig['recaptchaSecretKey'];
+    $ip = $_SERVER['REMOTE_ADDR'];
+
+    // post request to server
+    $url = 'https://www.google.com/recaptcha/api/siteverify';
+    $data = array('secret' => $secretKey, 'response' => $captcha);
+
+    $options = array(
+        'http' => array(
+        'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+        'method'  => 'POST',
+        'content' => http_build_query($data)
+        )
+    );
+    $context  = stream_context_create($options);
+    $response = file_get_contents($url, false, $context);
+    $responseKeys = json_decode($response,true);
+    // header('Content-type: application/json');
+    print_r($responseKeys);
+    if(!$responseKeys["success"]) {
+        die('MF256');
+    } 
+    //end validate recaptcha
 
     preg_match("/(<!-- #\{BeginInfo\} -->)(.|\s)*?(<!-- #\{EndInfo\} -->)/", $template, $tmp, PREG_OFFSET_CAPTURE);
     foreach ($_POST as $key => $value) {
@@ -105,7 +133,7 @@ try {
 
         // Whether to use SMTP authentication
         $mail->SMTPAuth = true;
-        $mail->SMTPSecure = "ssl";
+        $mail->SMTPSecure = $formConfig['SMTPSecure'];
 
         // Username to use for SMTP authentication
         $mail->Username = $formConfig['username'];

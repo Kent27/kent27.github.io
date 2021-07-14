@@ -250,7 +250,7 @@
           <div class="row row-60 justify-content-center">
             <div class="col-lg-8">
               <h4 class="text-spacing-25 text-transform-none">Get in Touch</h4>
-              <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+              <form id="demo-form" class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
                 <div class="row row-20 gutters-20">
                   <div class="col-md-6">
                     <div class="form-wrap">
@@ -277,7 +277,8 @@
                   </div>
                   <div class="col-md-6">
                     <div class="form-wrap">
-                      <input class="form-input" id="contact-phone-5" type="text" name="phone" data-constraints="@Numeric">
+                      <!-- <input class="form-input" id="contact-phone-5" type="text" name="phone" data-constraints="@Numeric"> -->
+                      <input class="form-input" id="contact-phone-5" type="text" name="phone">
                       <label class="form-label" for="contact-phone-5">Your Phone*</label>
                     </div>
                   </div>
@@ -288,7 +289,9 @@
                     </div>
                   </div>
                 </div>
-                <button class="button button-secondary button-winona" type="submit">Contact us</button>
+                <button class="button button-secondary button-winona g-recaptcha" id="submitButton">
+                  Contact us
+                </button>
               </form>
             </div>
             <div class="col-lg-4">
@@ -407,5 +410,19 @@
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    <!-- Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcLUIsbAAAAAPnFyc0BtMmb4YR8TiPH8PMB9YP0"></script>
+    <script>
+      $('#submitButton').on('click', function(e){
+        e.preventDefault();
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6LcLUIsbAAAAAPnFyc0BtMmb4YR8TiPH8PMB9YP0', {action: 'submit'}).then(function(token) {
+              console.log(token);
+              $('#demo-form').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
+              $('#demo-form').submit();
+          });
+        });
+      })
+    </script>
   </body>
 </html>

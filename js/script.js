@@ -1418,7 +1418,8 @@
 						'MF003': 'Please, define email field in your form!',
 						'MF004': 'Please, define type of your form!',
 						'MF254': 'Something went wrong with PHPMailer!',
-						'MF255': 'Aw, snap! Something went wrong.'
+						'MF255': 'Aw, snap! Something went wrong.',
+						'MF256': 'Failed to validate Captcha, please reload the page and try again'
 					};
 
 			for (i = 0; i < plugins.rdMailForm.length; i++) {
