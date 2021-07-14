@@ -89,7 +89,18 @@
 
 	// Initialize scripts that require a loaded page
 	$window.on('load', function () {
-
+		//if reload, show preloader, else hide
+		var perfEntries = performance.getEntriesByType("navigation");
+		var type = null;
+		if(perfEntries?.length > 0){
+			type = perfEntries[0].type;
+		}
+		
+		if(type=="reload"){
+			plugins.preloader.addClass('shown');
+		}else{
+			plugins.preloader.removeClass('shown');
+		}
 		// Page loader & Page transition
 		if (plugins.preloader.length && !isNoviBuilder) {
 			pageTransition({
@@ -106,6 +117,9 @@
 					setTimeout( function () {
 						plugins.preloader.removeClass('loaded');
 					}, options.duration * .75 );
+
+					//hide preloader after reload event
+					plugins.preloader.removeClass('shown');
 				},
 				onReady: function () {
 					plugins.preloader.addClass('loaded');
