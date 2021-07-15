@@ -27,8 +27,9 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      - name: Pulling commit
-        run: git pull origin main
+      - name: Deploy To Live Server
+        run: ssh -T ${{ secrets.ssh }} "ls -al;" 
+        #sudo git pull origin main;"
 
       # - name: 📂 Sync files
       #   uses: SamKirkland/FTP-Deploy-Action@4.1.0
