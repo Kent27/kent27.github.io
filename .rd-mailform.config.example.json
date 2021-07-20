@@ -1,0 +1,11 @@
+{
+    "useSmtp": true,
+    "host": "smtp.office365.com",
+    "port": 587,
+    "username": "your@email.com",
+    "password": "yourpassword",
+    "recipientEmail": "your@email.com",
+    "SMTPSecure": "tls",
+    "recaptchaSecretKey": "yourrecaptchasecretkey"
+  }
+  

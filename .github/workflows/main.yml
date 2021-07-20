@@ -34,7 +34,7 @@ jobs:
           SSH_KNOWN_HOSTS: ${{secrets.SSH_KNOWN_HOSTS}}
 
       - name: Deploy To Live Server with SSH
-        run: ssh -T -i $SSH_KEY_PATH ${{ secrets.ssh }} "cd domains/nico04072020.esy.es/public_html;ls -al;git pull origin main;" 
+        run: ssh -T -i $SSH_KEY_PATH ${{ secrets.ssh }} "cd domains/cocoproduce.com/public_html;ls -al;git pull origin main;" 
         env:
           SSH_KEY_PATH: ${{ github.workspace }}/../private.key
         #sudo git pull origin main;"
