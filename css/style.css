@@ -7241,7 +7241,7 @@ p + .quote-classic {
 		position: absolute;
 		padding: 0;
 		top: 26px;
-		right: 0;
+		right: 10px;
 		bottom: 26px;
 		left: calc(50% + 225px);
 	}
