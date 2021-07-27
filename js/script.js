@@ -87,20 +87,22 @@
 		$window.on( 'scroll', scrollHandler );
 	}
 
+	//if reload, show preloader, else hide
+	var perfEntries = performance.getEntriesByType("navigation");
+	var type = null;
+	if(perfEntries?.length > 0){
+		type = perfEntries[0].type;
+	}
+	
+	//if reload or home path, show preloader
+	if(type=="reload" || window.location.pathname == "/" || window.location.pathname == "/kent27.github.io/"){
+		plugins.preloader.addClass('shown');
+	}else{
+		plugins.preloader.removeClass('shown');
+	}
+
 	// Initialize scripts that require a loaded page
 	$window.on('load', function () {
-		//if reload, show preloader, else hide
-		var perfEntries = performance.getEntriesByType("navigation");
-		var type = null;
-		if(perfEntries?.length > 0){
-			type = perfEntries[0].type;
-		}
-		
-		if(type=="reload"){
-			plugins.preloader.addClass('shown');
-		}else{
-			plugins.preloader.removeClass('shown');
-		}
 		// Page loader & Page transition
 		if (plugins.preloader.length && !isNoviBuilder) {
 			pageTransition({
