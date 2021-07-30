@@ -23869,3 +23869,8 @@ disabled look for disabled choices in the results dropdown
 		opacity: 0;
 	}
 }
+
+/* Overwrite style.css */
+* + .list-description {
+	margin-bottom: 32px;
+}
