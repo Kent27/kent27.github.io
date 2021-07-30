@@ -8,6 +8,7 @@ Disallow: /services.html
 Disallow: /services-2.html
 Disallow: /services-3.html
 Disallow: /services-4.html
+Disallow: /single-service.html
 Disallow: /404-page.html
 Disallow: /coming-soon.html
 Disallow: /counters.html
@@ -28,6 +29,7 @@ Disallow: /projects.html
 Disallow: /grid-gallery.html
 Disallow: /project-page.html
 Disallow: /masonry-blog.html
+Disallow: /cement.html
 Disallow: /images/certificates/sucofindo_1.png
 
 Sitemap: http://cocoproduce.com/sitemap.xml
