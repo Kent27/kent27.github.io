@@ -232,6 +232,10 @@
 							to: end,
 							speed: 500
 						});
+						let displayText = $(this).find('.progress-value').data('display')
+						let headerText = $(this).find('.progress-header p').text()
+						$(this).find('.progress-header p').text(headerText + ": " + displayText)
+						$(this).find('.progress-value').hide()
 						bar.addClass('animated-first');
 					},
 					scrollHandler = function () {

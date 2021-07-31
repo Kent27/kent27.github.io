@@ -38,3 +38,32 @@
 .whatsapp-fab ul li a{
     color: white;
 }
+
+.briket-grades{
+    float: left;
+    width:  250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.text-center{
+    text-align: center;
+}
+
+* + .progress-linear {
+	margin-top: 30px;
+}
+
+.progress-linear + .progress-linear {
+	margin-top: 5px;
+}
+
+@media (min-width: 992px) {
+	.progress-linear + .progress-linear {
+		margin-top: 15px;
+	}
+}
+
+.progress-header > * {
+    max-width: 100%;
+}
