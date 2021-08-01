@@ -58,12 +58,37 @@
 	margin-top: 5px;
 }
 
-@media (min-width: 992px) {
-	.progress-linear + .progress-linear {
-		margin-top: 15px;
-	}
-}
-
 .progress-header > * {
     max-width: 100%;
+}
+
+.box-icon-megan {
+	position: relative;
+	padding: 50px 15px;
+	background: none;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.03);
+	z-index: 1;
+}
+
+@media (min-width: 992px) {
+	.desktop .box-icon-megan {
+		padding: 55px 5px;
+		box-shadow: none;
+	}
+	.desktop .box-icon-megan::before {
+		position: absolute;
+		content: '';
+		top: 5px;
+		right: -10px;
+		bottom: 5px;
+		left: -10px;
+		background: none;
+		transition: all .3s ease-in-out;
+		pointer-events: none;
+		z-index: -1;
+	}
+    
+    .progress-linear + .progress-linear {
+		margin-top: 15px;
+	}
 }
