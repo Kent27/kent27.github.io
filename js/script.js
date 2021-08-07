@@ -1,7 +1,16 @@
 "use strict";
 
 (function () {
-
+	let logoSize;
+	$(window).on("scroll", function() {
+		if ( $(window).scrollTop() > 0 && $('#hide-on-scroll').css('display') == "none" ) {
+			logoSize = 80
+		} else {
+			logoSize = 118;
+		}
+		$("#logo").width(logoSize).height(logoSize);
+	});
+	
 	// Global variables
 	var userAgent = navigator.userAgent.toLowerCase(),
 			initialDate = new Date(),
@@ -109,6 +118,12 @@
 
 	// Initialize scripts that require a loaded page
 	$window.on('load', function () {
+		if ( $(window).scrollTop() > 0 && $('#hide-on-scroll').css('display') == "none" ) {
+			logoSize = 80
+		} else {
+			logoSize = 118;
+		}
+		$("#logo").width(logoSize).height(logoSize);
 		// Page loader & Page transition
 		if (plugins.preloader.length && !isNoviBuilder) {
 			pageTransition({

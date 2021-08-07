@@ -61,24 +61,24 @@
               <!-- RD Navbar Toggle-->
               <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
               <!-- RD Navbar Brand-->
-              <div class="rd-navbar-brand"><a class="brand" href="/"><img class="brand-logo-dark" src="images/logo-default-244x78.png" alt="" width="122" height="39"/></a></div>
+              <div class="rd-navbar-brand"><a class="brand" href="/"><img class="brand-logo-dark" id="logo" src="images/LOGO G5 cropped.jpg" alt="" width="118" height="118"/></a></div>
             </div>
-            <div class="rd-navbar-right">
+            <div class="rd-navbar-right" id="navbar-contact">
               <div class="rd-navbar-main rd-navbar-nav-wrap">
                 <div class="rd-navbar-main-right">
                   <ul class="rd-navbar-contacts">
                     <li>
                       <div class="unit unit-spacing-xs">
                         <div class="unit-left"><span class="icon mdi mdi-phone"></span></div>
-                        <div class="unit-body"><a class="phone" href="tel:#">+1 718-999-3939</a></div>
+                        <div class="unit-body"><a class="phone" href="tel:#">+65 89223397</a></div>
                       </div>
                     </li>
-                    <li>
+                    <!-- <li>
                       <div class="unit unit-spacing-xs">
                         <div class="unit-left"><span class="icon mdi mdi-map-marker"></span></div>
                         <div class="unit-body"><a class="address" href="#">514 S. Magnolia St. Orlando, FL 32806</a></div>
                       </div>
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
                 <div class="rd-navbar-main-left">
@@ -149,22 +149,25 @@
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About Us</a>
                     </li>
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="shop.html">Shop</a>
+                    <li class="rd-nav-item active"><a class="rd-nav-link">Products</a>
                       <!-- RD Navbar Dropdown-->
                       <ul class="rd-menu rd-navbar-dropdown">
                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="shop.html">Shop</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="coconut-shell-charcoal-briquette.html">Single product</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="coconut-shell-charcoal-briquette.html">Briquette Charcoal</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="coco-fiber.html">Coco Fiber / Coir Fiber</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="coco-peat.html">Coco Peat</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="palm-ekel-broom.html">Palm Ekel Broom</a></li>
                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="checkout.html">Checkout</a></li>
                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="cart-page.html">Cart page</a></li>
                       </ul>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="projects.html">Projects</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contact Us</a>
                       <!-- RD Navbar Dropdown-->
-                      <ul class="rd-menu rd-navbar-dropdown">
+                      <!-- <ul class="rd-menu rd-navbar-dropdown">
                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="projects.html">Projects</a></li>
                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-gallery.html">Grid Gallery</a></li>
                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="project-page.html">Project page</a></li>
-                      </ul>
+                      </ul> -->
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="grid-blog.html">News</a>
                       <!-- RD Navbar Dropdown-->
@@ -174,10 +177,13 @@
                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-post.html">Blog post</a></li>
                       </ul>
                     </li>
+
+                    <!-- Additional Nav -->
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="faq.html">FAQ</a>
                   </ul>
                 </div>
               </div>
-              <div class="rd-navbar-aside rd-navbar-collapse">
+              <div id="hide-on-scroll" class="rd-navbar-aside rd-navbar-collapse">
                 <div class="rd-navbar-info">
                   <article class="box-icon-minimal">
                     <div class="unit align-items-center unit-spacing-sm">
@@ -186,7 +192,7 @@
                       </div>
                       <div class="unit-body">
                         <div class="box-icon-minimal-title">Leading Provider</div>
-                        <p class="box-icon-minimal-text">Of Industrial Solutions</p>
+                        <p class="box-icon-minimal-text">Of Natural Commodities</p>
                       </div>
                     </div>
                   </article>
@@ -197,7 +203,7 @@
                       </div>
                       <div class="unit-body">
                         <div class="box-icon-minimal-title">Certified</div>
-                        <p class="box-icon-minimal-text">ISO 9001:2008</p>
+                        <p class="box-icon-minimal-text">For Exports</p>
                       </div>
                     </div>
                   </article>
@@ -207,8 +213,8 @@
                         <div class="icon linearicons-receipt"></div>
                       </div>
                       <div class="unit-body">
-                        <div class="box-icon-minimal-title">Stock Market</div>
-                        <p class="box-icon-minimal-text">256.78 + 4.26</p>
+                        <div class="box-icon-minimal-title">Partnership</div>
+                        <p class="box-icon-minimal-text">With Local Farmers</p>
                       </div>
                     </div>
                   </article>
@@ -216,10 +222,10 @@
                 <div class="button-share">
                   <div class="button-share-icon linearicons-share2" data-rd-navbar-toggle=".list-share"></div>
                   <ul class="list-share">
-                    <li class="list-share-item"><a class="icon mdi mdi-facebook" href="#"></a></li>
-                    <li class="list-share-item"><a class="icon mdi mdi-twitter" href="#"></a></li>
-                    <li class="list-share-item"><a class="icon mdi mdi-instagram" href="#"></a></li>
-                    <li class="list-share-item"><a class="icon mdi mdi-google-plus" href="#"></a></li>
+                    <li class="list-share-item"><a class="icon mdi mdi-facebook" href="https://www.facebook.com/cocoproduce" target=”_blank”></a></li>
+                    <li class="list-share-item"><a class="icon mdi mdi-twitter" href="https://twitter.com/cocoproduce_id" target=”_blank”></a></li>
+                    <li class="list-share-item"><a class="icon mdi mdi-instagram" href="https://www.instagram.com/cocoproduce/" target=”_blank”></a></li>
+                    <li class="list-share-item"><a class="icon mdi mdi-linkedin" href="https://www.linkedin.com/in/cocoproduce/ "target="_blank"></a></li>
                   </ul>
                 </div><a class="button button-icon button-icon-left button-white button-winona" href="#" download="download"><span class="icon mdi mdi-download"></span><span>Download brochure</span></a><a class="button button-icon button-icon-left button-white button-winona" href="contacts.html"><span class="icon mdi mdi-email-outline"></span><span>Get a quote</span></a>
               </div>
@@ -322,10 +328,10 @@
                 <div class="group-sm group-middle"><span class="single-product-social-title">Share</span>
                   <div>
                     <ul class="list-inline single-product-social-list list-inline-sm">
-                      <li><a class="icon mdi mdi-facebook" href="#"></a></li>
-                      <li><a class="icon mdi mdi-twitter" href="#"></a></li>
-                      <li><a class="icon mdi mdi-instagram" href="#"></a></li>
-                      <li><a class="icon mdi mdi-google-plus" href="#"></a></li>
+                      <li><a class="icon mdi mdi-facebook" href="https://www.facebook.com/cocoproduce" target=”_blank”></a></li>
+                      <li><a class="icon mdi mdi-twitter" href="https://twitter.com/cocoproduce_id" target=”_blank”></a></li>
+                      <li><a class="icon mdi mdi-instagram" href="https://www.instagram.com/cocoproduce/" target=”_blank”></a></li>
+                      <li><a class="icon mdi mdi-linkedin" href="https://www.linkedin.com/in/cocoproduce/ "target="_blank"></a></li>
                     </ul>
                   </div>
                 </div>
@@ -568,15 +574,14 @@
                     <li><a href="about-us.html">Our History</a></li>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="grid-blog.html">Latest News</a></li>
-                    <li><a href="#">Management</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contacts.html">Contact Us</a></li>
                   </ul>
                   <ul class="list-inline footer-social-list">
-                    <li><a class="icon mdi mdi-facebook" href="#"></a></li>
-                    <li><a class="icon mdi mdi-twitter" href="#"></a></li>
-                    <li><a class="icon mdi mdi-instagram" href="#"></a></li>
-                    <li><a class="icon mdi mdi-google-plus" href="#"></a></li>
+                    <li><a class="icon mdi mdi-facebook" href="https://www.facebook.com/cocoproduce" target=”_blank”></a></li>
+                    <li><a class="icon mdi mdi-twitter" href="https://twitter.com/cocoproduce_id" target=”_blank”></a></li>
+                    <li><a class="icon mdi mdi-instagram" href="https://www.instagram.com/cocoproduce/" target=”_blank”></a></li>
+                    <li><a class="icon mdi mdi-linkedin" href="https://www.linkedin.com/in/cocoproduce/ "target="_blank"></a></li>
                   </ul>
                 </div>
               </div>
@@ -592,13 +597,13 @@
                       <div class="footer-classic-contacts-item">
                         <div class="unit unit-spacing-sm align-items-center">
                           <div class="unit-left"><span class="icon icon-24 mdi mdi-phone"></span></div>
-                          <div class="unit-body"><a class="phone" href="tel:#">+1 718-999-3939</a></div>
+                          <div class="unit-body"><a class="phone" href="tel:#">+65 89223397</a></div>
                         </div>
                       </div>
                       <div class="footer-classic-contacts-item">
                         <div class="unit unit-spacing-sm align-items-center">
                           <div class="unit-left"><span class="icon mdi mdi-email"></span></div>
-                          <div class="unit-body"><a class="mail" href="mailto:#">info@demolink.org</a></div>
+                          <div class="unit-body"><a class="mail" href="mailto:#">cocoproduce.id@gmail.com</a></div>
                         </div>
                       </div>
                     </div><a class="button button-sm button-primary button-winona" href="contacts.html">Request a quote</a>

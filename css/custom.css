@@ -92,3 +92,7 @@
 		margin-top: 15px;
 	}
 }
+
+.rd-navbar-panel {
+    transition: none;
+}
