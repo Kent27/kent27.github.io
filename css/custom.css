@@ -116,3 +116,15 @@
 	max-height: 355px;
 	width: auto !important;
 }
+
+#logo {display: block} 
+#logo2 {display: none}
+
+@media (max-width: 1024px) {
+    #logo {display: none} 
+    #logo2 {
+        display: flex;
+        margin-left: auto;
+        padding-left: 25px;
+    }
+}
