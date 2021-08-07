@@ -96,3 +96,23 @@
 .rd-navbar-panel {
     transition: none;
 }
+
+@media (min-width: 1200px) {
+	.footer-classic-gmap {
+		right: 10px;
+	}
+}
+
+.slick-product-figure {
+	background: unset;
+}
+
+/* Overwrite style.css */
+* + .list-description {
+	margin-bottom: 32px;
+}
+
+.img-product {
+	max-height: 355px;
+	width: auto !important;
+}
