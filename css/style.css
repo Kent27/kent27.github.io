@@ -23008,7 +23008,7 @@ disabled look for disabled choices in the results dropdown
 .slick-product-figure {
 	position: relative;
 	overflow: hidden;
-	background: #f3f3f3;
+	/* background: #f3f3f3; */
 	transition: all .3s ease;
 }
 
@@ -23873,4 +23873,9 @@ disabled look for disabled choices in the results dropdown
 /* Overwrite style.css */
 * + .list-description {
 	margin-bottom: 32px;
+}
+
+.img-product {
+	max-height: 355px;
+	width: auto !important;
 }
