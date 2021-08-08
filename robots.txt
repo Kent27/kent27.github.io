@@ -34,7 +34,6 @@ Disallow: /blog-post.html
 Disallow: /cement.html
 Disallow: /images/certificates/sucofindo_1.png
 Disallow: /images/Coconut_Tree_Farm.jpeg
-Disallow: /images/coconut-1.jpeg
 Disallow: /images/loading-shipping-container.jpeg
 Disallow: /images/freight.jpeg
 
