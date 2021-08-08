@@ -128,7 +128,7 @@
     height: 52px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     #logo {display: none} 
     #logo2 {
         display: flex;

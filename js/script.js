@@ -1767,7 +1767,7 @@
 					focusOnSelect: true,
 					arrows: $slickItem.attr("data-arrows") === "true",
 					swipe: $slickItem.attr("data-swipe") === "true",
-					autoplay: $slickItem.attr("data-autoplay") === "true",
+					autoplay: $slickItem.attr("data-autoplay") === "false",
 					centerMode: $slickItem.attr("data-center-mode") === "true",
 					fade: $slickItem.attr("data-slide-effect") === "true",
 					centerPadding: $slickItem.attr("data-center-padding") ? $slickItem.attr("data-center-padding") : '0.50',
