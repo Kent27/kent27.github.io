@@ -13550,7 +13550,7 @@ html.tablet .ui-to-top {
 
 .rd-navbar-fixed .rd-navbar-nav-wrap {
 	position: fixed;
-	left: 0;
+	right: 0;
 	top: -56px;
 	bottom: -56px;
 	z-index: 1069;
@@ -13561,7 +13561,7 @@ html.tablet .ui-to-top {
 	-webkit-overflow-scrolling: touch;
 	font-size: 14px;
 	line-height: 34px;
-	transform: translateX(-110%);
+	transform: translateX(110%);
 }
 
 .rd-navbar-fixed .rd-navbar-nav-wrap::-webkit-scrollbar {
