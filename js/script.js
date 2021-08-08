@@ -1486,7 +1486,9 @@
 						output.removeClass("active error success");
 
 						if (isValidated(inputs, captcha)) {
-
+							//disabled submitButton
+							$('#submitButton').addClass('disabled').attr('disabled', 'disabled');
+							
 							// veify reCaptcha
 							if (captcha.length) {
 								var captchaToken = captcha.find('.g-recaptcha-response').val(),
@@ -1549,6 +1551,9 @@
 						if (formHasCaptcha) {
 							grecaptcha.reset();
 						}
+
+						//remove disabled submitButton
+						$('#submitButton').removeClass('disabled').removeAttr('disabled', 'disabled');
 					},
 					success: function (result) {
 						if (isNoviBuilder)
@@ -1595,6 +1600,9 @@
 							output.removeClass("active error success");
 							form.removeClass('success');
 						}, 3500);
+
+						//remove disabled submitButton
+						$('#submitButton').removeClass('disabled').removeAttr('disabled', 'disabled');
 					}
 				});
 			}
