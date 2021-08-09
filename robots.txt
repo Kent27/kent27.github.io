@@ -29,7 +29,6 @@ Disallow: /projects.html
 Disallow: /grid-gallery.html
 Disallow: /project-page.html
 Disallow: /masonry-blog.html
-Disallow: /blog.html
 Disallow: /blog-post.html
 Disallow: /cement.html
 Disallow: /images/certificates/sucofindo_1.png
