@@ -1,0 +1,14 @@
+# Docker Compose Engine Version
+version: '3'
+
+# The docker images to be used for this composer file
+services:
+  # nginx image setup
+  cocoproduce-nginx:
+    ports:
+      - "${APP_PORT}:80"
+    volumes:
+      - .:/var/www
+      - ./etc/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./etc/nginx/logs:/var/log/nginx
+ 

@@ -1,0 +1,28 @@
+version: '3'
+
+# Setting up one network called 'default'
+networks:
+  default:
+
+# The docker images to be used for this composer file
+services:
+  # php image setup
+  cocoproduce-php:
+    container_name: cocoproduce-php
+    networks:
+      - default
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/var/www
+      - ./etc/php/custom.ini:/usr/local/etc/php/conf.d/custom.ini
+      - ./etc/php/www.conf:/usr/local/etc/php-fpm.d/www.conf
+  # nginx image setup
+  cocoproduce-nginx:
+    image: nginx:stable-alpine
+    container_name: cocoproduce-nginx
+    depends_on:
+      - cocoproduce-php
+    networks:
+      - default
