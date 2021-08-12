@@ -23,6 +23,7 @@ help:
 	@echo 'Usage: make [options] ...'
 	@echo 'For PRODUCTION: add suffix _prod at the end of the options, example: init_prod, run_prod, down_prod, restart_prod'
 	@echo 'Options:'
+	@echo '  init        Init project, cp example config files'
 	@echo '  run        Run the docker instance to be able to access locally.'
 	@echo '             e.g. http://localhost:8088/'
 	@echo '  down       Stop the running docker instance.'

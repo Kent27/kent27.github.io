@@ -5,4 +5,4 @@ Disallow: /images/Coconut_Tree_Farm.jpeg
 Disallow: /images/loading-shipping-container.jpeg
 Disallow: /images/freight.jpeg
 
-Sitemap: http://cocoproduce.com/sitemap.xml
+Sitemap: https://cocoproduce.com/sitemap.xml
