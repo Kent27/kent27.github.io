@@ -34,14 +34,6 @@ jobs:
           SSH_KNOWN_HOSTS: ${{secrets.SSH_KNOWN_HOSTS}}
 
       - name: Deploy To Live Server with SSH
-        run: ssh -T -i $SSH_KEY_PATH ${{ secrets.ssh }} "cd domains/cocoproduce.com/public_html;ls -al;git pull origin main;" 
+        run: ssh -T -i $SSH_KEY_PATH ${{ secrets.ssh }} "cd kent27.github.io;git pull origin main;"
         env:
           SSH_KEY_PATH: ${{ github.workspace }}/../private.key
-        #sudo git pull origin main;"
-
-      # - name: 📂 Sync files
-      #   uses: SamKirkland/FTP-Deploy-Action@4.1.0
-      #   with:
-      #     server: ftp.richindo.com
-      #     username: u252231705.nico04072020.esy.es
-      #     password: ${{ secrets.ftp_password }}
