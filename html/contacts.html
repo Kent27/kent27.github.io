@@ -406,12 +406,12 @@
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
     <!-- Recaptcha -->
-    <script src="https://www.google.com/recaptcha/api.js?render=6LcLUIsbAAAAAPnFyc0BtMmb4YR8TiPH8PMB9YP0"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdU_wQcAAAAACOoH-Xb64CiYMaXdQYGxuRXNkjt"></script>
     <script>
       $('#submitButton').on('click', function(e){
         e.preventDefault();
         grecaptcha.ready(function() {
-          grecaptcha.execute('6LcLUIsbAAAAAPnFyc0BtMmb4YR8TiPH8PMB9YP0', {action: 'submit'}).then(function(token) {
+          grecaptcha.execute('6LdU_wQcAAAAACOoH-Xb64CiYMaXdQYGxuRXNkjt', {action: 'submit'}).then(function(token) {
               console.log(token);
               $('#demo-form').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
               $('#demo-form').submit();
