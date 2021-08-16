@@ -15,7 +15,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - .:/var/www
+      - ./html:/var/www
       - ./etc/php/custom.ini:/usr/local/etc/php/conf.d/custom.ini
       - ./etc/php/www.conf:/usr/local/etc/php-fpm.d/www.conf
   # nginx image setup

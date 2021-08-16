@@ -13,8 +13,12 @@ server {
     client_max_body_size 100M;
     large_client_header_buffers 4 32k;
 
+    # location / {
+    #     try_files $uri $uri/ /index.php?$query_string;
+    # }
+
     location / {
-        try_files $uri $uri/ /index.php?$query_string;
+        try_files $uri $uri/ /404-page.html;
     }
 
     location ~ \.php$ {
@@ -28,5 +32,12 @@ server {
         fastcgi_index index.php;
         fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
         include fastcgi_params;
+    }
+
+    # The ^~ means if this prefix pattern matches use this location block
+    # and don't continue onto the regex location blocks - which would load
+    # the laravel application
+    location ^~ /bat/rd-mailform.config.json {
+        return 404;
     }
 }
