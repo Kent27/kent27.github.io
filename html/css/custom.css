@@ -151,3 +151,8 @@
     object-fit: cover;
     height: 190px;
 }
+
+.image-min-h-400 {
+    object-fit: cover;
+    min-height: 400px;
+}
