@@ -141,3 +141,13 @@
     opacity: 0.65;
     pointer-events: none;
 }
+
+.image-same-500 {
+    object-fit: cover;
+    height: 500px;
+}
+
+.image-same-190 {
+    object-fit: cover;
+    height: 190px;
+}
