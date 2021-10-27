@@ -156,3 +156,9 @@
     object-fit: cover;
     min-height: 400px;
 }
+
+.home-carousel-img {
+    object-fit: cover;
+    width: 370px;
+    height: 436px;
+}
