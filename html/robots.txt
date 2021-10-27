@@ -1,6 +1,5 @@
 User-agent: *
 Disallow: /404-page.html
-Disallow: /images/certificates/sucofindo_1.png
 Disallow: /images/Coconut_Tree_Farm.jpeg
 Disallow: /images/loading-shipping-container.jpeg
 Disallow: /images/freight.jpeg
