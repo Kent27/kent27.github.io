@@ -117,7 +117,9 @@
 	setPreloaderByNavigation();
 
 	// Initialize scripts that require a loaded page
-	$window.on('load', function () {
+	$document.on('DOMContentLoaded', function () {
+	// $window.on('load', function () {
+		console.log('loaded')
 		if ( $(window).scrollTop() > 0 && $('#hide-on-scroll').css('display') == "none" ) {
 			logoSize = 80
 		} else {
