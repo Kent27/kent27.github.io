@@ -163,6 +163,31 @@ h1,
 	}
 }
 
+/* title-1 is for h1 but smaller font-size */
+h1.title-1 {
+	font-size: 30px;
+	line-height: 1;
+	letter-spacing: .025em;
+}
+
+@media (min-width: 768px) {
+	h1.title-1 {
+		font-size: 35px;
+	}
+}
+
+@media (min-width: 992px) {
+	h1.title-1 {
+		font-size: 45px;
+	}
+}
+
+@media (min-width: 1200px) {
+	h1.title-1 {
+		font-size: 55px;
+	}
+}
+
 h2,
 .heading-2 {
 	font-size: 36px;
@@ -23860,4 +23885,12 @@ disabled look for disabled choices in the results dropdown
 	.desktop .thumbnail-small:hover .thumbnail-small-image:after {
 		opacity: 0;
 	}
+}
+
+.overlay {
+	width: 100%; 
+	height: 100%; 
+	background-color: black; 
+	opacity: 0.7;
+	position: absolute;
 }
