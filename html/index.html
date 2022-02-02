@@ -38,8 +38,8 @@
     <meta name="twitter:image" content="https://cocoproduce.com/images/LOGO-G5-moc-3d.jpg" />  
 
     
-    <link rel="icon" type="image/png" href="images/Favicon Logo.png" />
-    <link rel="apple-touch-icon" href="images/Favicon Logo.png" />
+    <link rel="icon" type="image/png" href="images/Favicon-Logo.png" />
+    <link rel="apple-touch-icon" href="images/Favicon-Logo.png" />
     
 
     <!-- SEO By Page Meta Tags -->
@@ -50,12 +50,18 @@
     <meta name="twitter:description" content="PT. Cocoproduce Ekspor Indonesia is Indonesia's Leading Supplier of coconut charcoal briquette, coco fiber, coco peat, semi husked coconut and many more." />
 
     <!-- Stylesheets-->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,600,700,900%7CRaleway:500">
+    <link rel="preload" href="//fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,600,700,900%7CRaleway:500&display=swap" as="style">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,600,700,900%7CRaleway:500&display=swap">
+    <link rel="preload" href="css/bootstrap.css" as="style">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="preload" href="css/fonts.css?v=4" as="style">
+    <link rel="stylesheet" href="css/fonts.css?v=4">
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css" id="main-styles-link">
+    
     <!-- External Stylesheets -->
-    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="preload" href="css/fontawesome.min.css?v=4" as="style">
+    <link rel="stylesheet" href="css/fontawesome.min.css?v=4">
     <link rel="stylesheet" href="css/custom.css">
     
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
@@ -263,7 +269,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide context-dark" data-slide-bg="images/briket1-large-1800w.jpg">
+          <div class="swiper-slide context-dark" data-slide-bg="images/briket1-large-1800w.webp">
             <div class="swiper-slide-caption section-md">
               <div class="container">
                 <div class="row justify-content-lg-center">
@@ -289,7 +295,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide context-dark" data-slide-bg="images/semi-husked-coconut-3024w.jpeg">
+          <div class="swiper-slide context-dark" data-slide-bg="images/semi-husked-coconut-min.webp">
             <div class="swiper-slide-caption section-md">
               <div class="container">
                 <div class="row justify-content-lg-center">
@@ -326,11 +332,11 @@
             <div class="col-xl-3">
               <h5 class="text-spacing-200">What we can offer</h5>
               <ul class="nav list-category list-category-down-lg-inline-block">
-                <li class="list-category-item wow fadeInRight" id="item-briket" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-6-1" data-toggle="tab">Charcoal Briquette</a></li>
-                <li class="list-category-item wow fadeInRight" id="item-fiber" role="presentation" data-wow-delay=".1s"><a href="#tabs-6-2" data-toggle="tab">Coco Fiber</a></li>
-                <li class="list-category-item wow fadeInRight" id="item-peat" role="presentation" data-wow-delay=".2s"><a href="#tabs-6-3" data-toggle="tab">Coco Peat</a></li>
-                <li class="list-category-item wow fadeInRight" id="item-nipah" role="presentation" data-wow-delay=".3s"><a href="#tabs-6-4" data-toggle="tab">Semi Husked Coconut</a></li>
-                <!-- <li class="list-category-item wow fadeInRight" id="item-nipah" role="presentation" data-wow-delay=".3s"><a href="#tabs-6-5" data-toggle="tab">Palm Ekel Broom</a></li> -->
+                <li class="list-category-item wow fadeInRight" id="item-briket" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-6-1" onclick="return false;" data-toggle="tab">Charcoal Briquette</a></li>
+                <li class="list-category-item wow fadeInRight" id="item-fiber" role="presentation" data-wow-delay=".1s"><a href="#tabs-6-2" onclick="return false;" data-toggle="tab">Coco Fiber</a></li>
+                <li class="list-category-item wow fadeInRight" id="item-peat" role="presentation" data-wow-delay=".2s"><a href="#tabs-6-3" onclick="return false;" data-toggle="tab">Coco Peat</a></li>
+                <li class="list-category-item wow fadeInRight" id="item-nipah" role="presentation" data-wow-delay=".3s"><a href="#tabs-6-4" onclick="return false;" data-toggle="tab">Semi Husked Coconut</a></li>
+                <!-- <li class="list-category-item wow fadeInRight" id="item-nipah" role="presentation" data-wow-delay=".3s"><a href="#tabs-6-5" onclick="return false;" data-toggle="tab">Palm Ekel Broom</a></li> -->
               </ul>
               <!-- <div class="link-classic"><a href="services.html">See all products</a></div> -->
             </div>
@@ -480,7 +486,7 @@
             <div class="col-md-6 col-lg-5 col-xl-4">
               <div class="oh">
                 <!-- Services Classic-->
-                <article class="services-classic wow slideInLeft" data-wow-delay="0s" data-wow-duration="1s"><a class="services-classic-figure" href="coconut-shell-charcoal-briquette.html"><img class="briket-grades" src="images/briket3-small-736w.jpg" alt="cube briquette sample"/></a>
+                <article class="services-classic wow slideInLeft" data-wow-delay="0s" data-wow-duration="1s"><a class="services-classic-figure" href="coconut-shell-charcoal-briquette.html"><img class="briket-grades" src="images/briket3-small-736w.jpg" alt="cube briquette sample" width="100%" height="250"/></a>
                   <div class="services-classic-caption">
                     <div class="unit align-items-lg-center" style="justify-content: center;">
                       <!-- <div class="unit-left"><span class="services-classic-icon linearicons-ship"></span></div> -->
@@ -525,7 +531,7 @@
             <div class="col-md-6 col-lg-5 col-xl-4">
               <div class="oh">
                 <!-- Services Classic-->
-                <article class="services-classic wow slideInLeft" data-wow-delay=".15s" data-wow-duration="1s"><a class="services-classic-figure" href="coconut-shell-charcoal-briquette.html"><img class="briket-grades" src="images/briket6.jpeg" alt="shisha briquette in block shape" style="object-fit: contain;"/></a>
+                <article class="services-classic wow slideInLeft" data-wow-delay=".15s" data-wow-duration="1s"><a class="services-classic-figure" href="coconut-shell-charcoal-briquette.html"><img class="briket-grades" src="images/briket6.jpeg" alt="shisha briquette in block shape" style="object-fit: contain;" width="100%" height="250"/></a>
                   <div class="services-classic-caption">
                     <div class="unit align-items-lg-center" style="justify-content: center;">
                       <!-- <div class="unit-left"><span class="services-classic-icon linearicons-power"></span></div> -->
@@ -570,7 +576,7 @@
             <div class="col-md-6 col-lg-5 col-xl-4">
               <div class="oh">
                 <!-- Services Classic-->
-                <article class="services-classic wow slideInLeft" data-wow-delay=".3s" data-wow-duration="1s"><a class="services-classic-figure" href="coconut-shell-charcoal-briquette.html"><img class="briket-grades" src="images/briket4.jpeg" alt="hexagonal bbq briquette"/></a>
+                <article class="services-classic wow slideInLeft" data-wow-delay=".3s" data-wow-duration="1s"><a class="services-classic-figure" href="coconut-shell-charcoal-briquette.html"><img class="briket-grades" src="images/briket4.jpeg" alt="hexagonal bbq briquette" width="100%" height="250"/></a>
                   <div class="services-classic-caption">
                     <div class="unit align-items-lg-center" style="justify-content: center;">
                       <!-- <div class="unit-left"><span class="services-classic-icon linearicons-factory2"></span></div> -->
@@ -696,9 +702,9 @@
                   <div class="aside-item col-sm-10 col-md-12">
                     <h3>Blog</h3>
                     <!-- <ul class="nav list-category">
-                      <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-7-1" data-toggle="tab">Company  news</a></li>
-                      <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-7-2" data-toggle="tab">News for investors</a></li>
-                      <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="#tabs-7-3" data-toggle="tab">Industry news</a></li>
+                      <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-7-1" onclick="return false;" data-toggle="tab">Company  news</a></li>
+                      <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-7-2" onclick="return false;" data-toggle="tab">News for investors</a></li>
+                      <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="#tabs-7-3" onclick="return false;" data-toggle="tab">Industry news</a></li>
                     </ul> -->
                   </div>
                   <div class="aside-item col-sm-6 col-md-12 order-md-1">
@@ -738,6 +744,7 @@
                                   sizes="50vw"
                                   src="images/coconut-shell-1-770w.jpeg" 
                                   alt="coconut shell"
+                                  width="370" height="210"
                                   loading="lazy">
                                 </div>
                                 <div class="post-classic-content">
@@ -1188,12 +1195,37 @@
                   </div>
                 </div>
               </div>
+              <div class="col-sm-6 col-lg-4 wow fadeInRight" data-wow-delay=".1s">
+                <div class="footer-classic-header">
+                  <div class="box-width-230">
+                    <h6 class="footer-classic-title">Office</h6>
+                  </div>
+                </div>
+                <div class="footer-classic-body">
+                  <div class="box-width-230">
+                    <div class="footer-classic-contacts">
+                      <div class="footer-classic-contacts-item">
+                        <div class="unit unit-spacing-sm align-items-center">
+                          <div class="unit-left"><span class="icon icon-24 mdi mdi-map-marker"></span></div>
+                          <div class="unit-body"><a class="address" target="_blank" href="https://www.google.com/maps/place/INFINITI+OFFICE+%7C+Virtual+Office+Jakarta+Selatan/@-6.221431,106.782511,13z/data=!4m5!3m4!1s0x0:0x177e810eec32a7f4!8m2!3d-6.221431!4d106.7825109?hl=en-GB">Belleza BSA, 1st Floor Unit 106, Jl. Letjen Soepeno, RT 004 / RW 002, Kelurahan Grogol Utara, Kecamatan Kebayoran Lama, Jakarta Selatan 12210</a></div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
               <div class="col-lg-4 position-static">
                 <div class="footer-classic-gmap">
-                  <!-- iframe Maps -->
-                  <div class="gmap_canvas">
-                      <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=INFINITI%20OFFICE%20%7C%20Virtual%20Office%20Jakarta%20Selatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
-                  </div>
+                  <!-- <div class="gmap_canvas">
+                    <iframe
+                      width="100%"
+                      height="350"
+                      id="gmap_canvas"
+                      frameborder="0" style="border:0"
+                      scrolling="no" marginHeight="0" marginWidth="0"
+                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA9Pr-YAi8YkzIaUsjrTcCHxHCaENqZlmo&q=-6.221448,106.782536" allowfullscreen>
+                    </iframe>
+                  </div> -->
+                      <!-- <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=INFINITI%20OFFICE%20%7C%20Virtual%20Office%20Jakarta%20Selatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe> -->
 
                   <!-- Template Maps -->
                   <!-- <div class="google-map-container" data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-zoom="5" data-icon="images/gmap_marker.png" data-icon-active="images/gmap_marker_active.png" data-styles="[{&quot;featureType&quot;:&quot;water&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#e9e9e9&quot;},{&quot;lightness&quot;:17}]},{&quot;featureType&quot;:&quot;landscape&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f5f5f5&quot;},{&quot;lightness&quot;:20}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:17}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:29},{&quot;weight&quot;:0.2}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:18}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:16}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f5f5f5&quot;},{&quot;lightness&quot;:21}]},{&quot;featureType&quot;:&quot;poi.park&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#dedede&quot;},{&quot;lightness&quot;:21}]},{&quot;elementType&quot;:&quot;labels.text.stroke&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;on&quot;},{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:16}]},{&quot;elementType&quot;:&quot;labels.text.fill&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:36},{&quot;color&quot;:&quot;#333333&quot;},{&quot;lightness&quot;:40}]},{&quot;elementType&quot;:&quot;labels.icon&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f2f2f2&quot;},{&quot;lightness&quot;:19}]},{&quot;featureType&quot;:&quot;administrative&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#fefefe&quot;},{&quot;lightness&quot;:20}]},{&quot;featureType&quot;:&quot;administrative&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#fefefe&quot;},{&quot;lightness&quot;:17},{&quot;weight&quot;:1.2}]}]">
@@ -1232,7 +1264,7 @@
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
     <!-- Javascript-->
-    <script src="js/core.min.js"></script>
+    <script src="js/core.min.js?v=4"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
