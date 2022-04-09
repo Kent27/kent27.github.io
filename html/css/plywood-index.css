@@ -1,0 +1,39 @@
+a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+    /* scroll-margin-top: 100px; */
+}
+#gallery {
+   margin-top:20px;
+}
+@media (min-width: 768px) {
+	a.anchor {
+        display: block;
+        position: relative;
+        top: -80px;
+        visibility: hidden;
+        /* scroll-margin-top: 100px; */
+    }
+}
+
+@media (min-width: 992px) {
+	a.anchor {
+        display: block;
+        position: relative;
+        top: -90px;
+        visibility: hidden;
+        /* scroll-margin-top: 100px; */
+    }
+}
+#product-list {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 18px;
+}
+#product-list li {
+    display: list-item;
+    padding-left: 10px;
+    list-style-image: url(../images/veneer/planks-small.png);
+}
