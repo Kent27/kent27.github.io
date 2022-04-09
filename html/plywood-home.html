@@ -157,7 +157,7 @@
               <!-- RD Navbar Toggle-->
               <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap" style="margin-left: auto; order: 2;"><span></span></button>
               <!-- RD Navbar Brand-->
-              <div class="rd-navbar-brand"><a class="brand" href="plywood-home.html">
+              <div class="rd-navbar-brand"><a class="brand" href="./">
                 <img class="brand-logo-dark" id="logo" src="images/LOGO-G5-cropped-118w.webp" alt="cocoproduce logo" width="118" height="118"/>
                 <div id="logo2">
                   <img class="brand-logo-dark" src="images/Favicon-Logo-92w.png" alt="cocoproduce favicon" width="46" height="46"/>
@@ -180,7 +180,7 @@
                 <div class="rd-navbar-main-left">
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="plywood-home.html">Home</a></li>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="./">Home</a></li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="#product">Product</a>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="#about-us">About Us</a>
@@ -424,10 +424,7 @@
             </div>
             <div class="col-md-9 col-lg-6 position-static index-1">
               <div class="bg-image-right-1 bg-image-right-lg gradient-overlay"><img src="images/about-1-1110x710.jpg" alt="" width="1110" height="710"/>
-                <div class="link-play-modern"><a class="icon mdi mdi-play" data-lightgallery="item" href="https://www.youtube.com/watch?v=1UWpbtUupQQ"></a>
-                  <div class="link-play-modern-title">How we<span>Work</span></div>
-                  <div class="link-play-modern-decor"></div>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -810,7 +807,7 @@
                           <div class="unit-body"><a class="mail" target="_blank" href="mailto:admin@cocoproduce.com">admin@cocoproduce.com</a></div>
                         </div>
                       </div>
-                    </div><a class="button button-sm button-primary button-winona" href="contacts.html">Request a quote</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -887,5 +884,19 @@
     <script src="js/script.min.js?v-cocoproduce=5"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/plywood-index.js"></script>
+    <!-- Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdU_wQcAAAAACOoH-Xb64CiYMaXdQYGxuRXNkjt"></script>
+    <script>
+    $('#submitButton').on('click', function(e){
+        e.preventDefault();
+        grecaptcha.ready(function() {
+        grecaptcha.execute('6LdU_wQcAAAAACOoH-Xb64CiYMaXdQYGxuRXNkjt', {action: 'submit'}).then(function(token) {
+            console.log(token);
+            $('#demo-form').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
+            $('#demo-form').submit();
+        });
+        });
+    })
+    </script>
   </body>
 </html>
