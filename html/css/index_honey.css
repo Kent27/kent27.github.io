@@ -36,3 +36,20 @@ a.anchor {
 a[data-custom-scroll-to] {
   cursor: pointer;
 }
+
+.services-classic-figure {
+  display: flex;
+  justify-content: center;
+}
+.services-classic-figure > img {
+  object-fit: cover;
+  width: 370px;
+  width: auto;
+  height: 274px;
+}
+
+.overlay-03{width:100%;height:100%;background-color:black;opacity:0.3;position:absolute;}
+
+.title-group h3 + p {
+  margin-top: 10px;
+}
