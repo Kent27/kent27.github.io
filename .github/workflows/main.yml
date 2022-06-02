@@ -34,6 +34,6 @@ jobs:
           SSH_KNOWN_HOSTS: ${{secrets.SSH_KNOWN_HOSTS}}
 
       - name: Deploy To Live Server with SSH
-        run: ssh -T -i $SSH_KEY_PATH ${{ secrets.ssh }} "cd kent27.github.io;git pull origin main;"
+        run: echo $SSH_KEY_PATH; ssh -T -i $SSH_KEY_PATH ${{ secrets.ssh }} "cd kent27.github.io;git pull origin main;"
         env:
           SSH_KEY_PATH: ${{ github.workspace }}/../private.key
