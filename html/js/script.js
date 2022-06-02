@@ -1,14 +1,17 @@
 "use strict";
 
 (function () {
-	let logoSize;
+	let logoSize, logoPlasticSize;
 	$(window).on("scroll", function() {
 		if ( $(window).scrollTop() > 0 && $('#hide-on-scroll').css('display') == "none" ) {
-			logoSize = 80
+			logoSize = 80;
+			logoPlasticSize = 130;
 		} else {
 			logoSize = 118;
+			logoPlasticSize = 160
 		}
 		$("#logo").width(logoSize).height(logoSize);
+		$("#logoPlastic").width(logoPlasticSize);
 	});
 	
 	// Global variables
@@ -121,11 +124,14 @@
 	// $window.on('load', function () {
 		console.log('loaded')
 		if ( $(window).scrollTop() > 0 && $('#hide-on-scroll').css('display') == "none" ) {
-			logoSize = 80
+			logoSize = 80;
+			logoPlasticSize = 130;
 		} else {
 			logoSize = 118;
+			logoPlasticSize = 160;
 		}
 		$("#logo").width(logoSize).height(logoSize);
+		$("#logoPlastic").width(logoPlasticSize);
 		// Page loader & Page transition
 		if (plugins.preloader.length && !isNoviBuilder) {
 			pageTransition({
