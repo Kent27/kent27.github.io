@@ -117,8 +117,8 @@
 	width: auto !important;
 }
 
-#logo {display: block} 
-#logo2 {display: none}
+#logo, #logoPlastic {display: block} 
+#logo2, #logoPlastic2 {display: none}
 
 .rd-navbar-fixed .rd-navbar-submenu-toggle {
 	position: absolute;
@@ -129,8 +129,8 @@
 }
 
 @media (max-width: 1199px) {
-    #logo {display: none} 
-    #logo2 {
+    #logo, #logoPlastic {display: none} 
+    #logo2, #logoPlastic2 {
         display: flex;
         margin-left: auto;
         padding-left: 25px;
